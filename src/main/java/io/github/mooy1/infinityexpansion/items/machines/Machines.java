@@ -427,27 +427,27 @@ public final class Machines {
                 .addRecipe(SlimefunItems.REACTOR_COOLANT_CELL, new ItemStack(Material.ICE, 2))
                 .energyPerTick(90).register(plugin);
 
-        RandomizedItemStack twoDust = new RandomizedItemStack(
-                new SlimefunItemStack(SlimefunItems.COPPER_DUST, 2),
-                new SlimefunItemStack(SlimefunItems.ZINC_DUST, 2),
-                new SlimefunItemStack(SlimefunItems.TIN_DUST, 2),
-                new SlimefunItemStack(SlimefunItems.ALUMINUM_DUST, 2),
-                new SlimefunItemStack(SlimefunItems.LEAD_DUST, 2),
-                new SlimefunItemStack(SlimefunItems.SILVER_DUST, 2),
-                new SlimefunItemStack(SlimefunItems.GOLD_DUST, 2),
-                new SlimefunItemStack(SlimefunItems.IRON_DUST, 2),
-                new SlimefunItemStack(SlimefunItems.MAGNESIUM_DUST, 2)
+        RandomizedItemStack sixteenDust = new RandomizedItemStack(
+                new SlimefunItemStack(SlimefunItems.COPPER_DUST, 16),
+                new SlimefunItemStack(SlimefunItems.ZINC_DUST, 16),
+                new SlimefunItemStack(SlimefunItems.TIN_DUST, 16),
+                new SlimefunItemStack(SlimefunItems.ALUMINUM_DUST, 16),
+                new SlimefunItemStack(SlimefunItems.LEAD_DUST, 16),
+                new SlimefunItemStack(SlimefunItems.SILVER_DUST, 16),
+                new SlimefunItemStack(SlimefunItems.GOLD_DUST, 16),
+                new SlimefunItemStack(SlimefunItems.IRON_DUST, 16),
+                new SlimefunItemStack(SlimefunItems.MAGNESIUM_DUST, 16)
         );
         new MachineBlock(Groups.ADVANCED_MACHINES, DUST_EXTRACTOR, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
                 SlimefunItems.ELECTRIC_ORE_GRINDER_2, SlimefunItems.ELECTRIC_GOLD_PAN_3, SlimefunItems.ELECTRIC_DUST_WASHER_3,
                 SlimefunItems.ELECTRIC_ORE_GRINDER_2, SlimefunItems.ELECTRIC_GOLD_PAN_3, SlimefunItems.ELECTRIC_DUST_WASHER_3,
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
-        }).ticksPerOutput(1).addRecipe(twoDust, new ItemStack(Material.COBBLESTONE, 4))
-                .addRecipe(twoDust, new ItemStack(Material.ANDESITE, 4))
-                .addRecipe(twoDust, new ItemStack(Material.STONE, 4))
-                .addRecipe(twoDust, new ItemStack(Material.DIORITE, 4))
-                .addRecipe(twoDust, new ItemStack(Material.GRANITE, 4))
-                .energyPerTick(240).register(plugin);
+        }).ticksPerOutput(1).addRecipe(sixteenDust, new ItemStack(Material.COBBLESTONE, 4))
+                .addRecipe(sixteenDust, new ItemStack(Material.ANDESITE, 4))
+                .addRecipe(sixteenDust, new ItemStack(Material.STONE, 4))
+                .addRecipe(sixteenDust, new ItemStack(Material.DIORITE, 4))
+                .addRecipe(sixteenDust, new ItemStack(Material.GRANITE, 4))
+                .energyPerTick(1040).register(plugin);
 
         RandomizedItemStack sixtyFourDust = new RandomizedItemStack(
                 new SlimefunItemStack(SlimefunItems.COPPER_DUST, 64),
