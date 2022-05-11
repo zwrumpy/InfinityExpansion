@@ -33,8 +33,13 @@ public final class InfinityMatrix extends SimpleSlimefunItem<ItemUseHandler> imp
     }
 
     private static void enableFlight(Player p) {
-        p.sendMessage(ChatColor.GREEN + "Infinity Flight Enabled!");
-        p.setAllowFlight(true);
+        if (p.hasPermission("infinity.matrix.fly")) {
+            p.sendMessage(ChatColor.GREEN + "Infinity Flight Enabled!");
+            p.setAllowFlight(true);
+            return;
+        }
+        p.sendMessage(ChatColor.RED + "Infinity Flight Locked");
+        p.sendMessage(ChatColor.GRAY + "Unlock it at /pointshop");
     }
 
     @Nonnull
