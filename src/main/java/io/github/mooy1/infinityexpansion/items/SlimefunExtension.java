@@ -63,7 +63,7 @@ public final class SlimefunExtension {
     private static final int INFINITY_CHARGER_ENERGY = 60000;
 
     private static final int ADVANCED_SMELTERY_ENERGY = 240;
-    private static final int ADVANCED_SMELTERY_SPEED = 24;
+    private static final int ADVANCED_SMELTERY_SPEED = 72;
 
     private static final int STAR_ENERGY = 1800;
     private static final int STAR_BUFFER = 90000;
