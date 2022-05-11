@@ -320,12 +320,14 @@ public final class StorageCache {
                 setEmpty();
             }
             else {
+                if (this.material == null) return;
                 int amt = Math.min(this.material.getMaxStackSize(), this.amount - 1);
                 this.menu.replaceExistingItem(OUTPUT_SLOT, createItem(amt), false);
                 this.amount -= amt;
             }
         }
         else if (this.amount > 1) {
+            if (this.material == null) return;
             int amt = Math.min(this.material.getMaxStackSize() - outputSlot.getAmount(), this.amount - 1);
             if (amt != 0 && matches(outputSlot)) {
                 outputSlot.setAmount(outputSlot.getAmount() + amt);
