@@ -147,7 +147,7 @@ public final class Machines {
             "&7Forms ingots from dusts",
             "",
             MachineLore.speed(1),
-            MachineLore.energyPerSecond(240)
+            MachineLore.energyPerSecond(440)
     );
     public static final SlimefunItemStack INFINITY_INGOT_FORMER = new SlimefunItemStack(
             "INFINITY_INGOT_FORMER",
@@ -489,16 +489,16 @@ public final class Machines {
                 SlimefunItems.ELECTRIC_INGOT_FACTORY_2, SlimefunItems.ELECTRIC_INGOT_FACTORY_2, SlimefunItems.ELECTRIC_INGOT_FACTORY_2,
                 SlimefunItems.ELECTRIC_INGOT_FACTORY_2, SlimefunItems.ELECTRIC_INGOT_FACTORY_2, SlimefunItems.ELECTRIC_INGOT_FACTORY_2,
                 Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
-        }).addRecipe(new SlimefunItemStack(SlimefunItems.COPPER_INGOT, 4), new SlimefunItemStack(SlimefunItems.COPPER_DUST, 8))
-                .addRecipe(new SlimefunItemStack(SlimefunItems.ZINC_INGOT, 4), new SlimefunItemStack(SlimefunItems.ZINC_DUST, 8))
-                .addRecipe(new SlimefunItemStack(SlimefunItems.TIN_INGOT, 4), new SlimefunItemStack(SlimefunItems.TIN_DUST, 8))
-                .addRecipe(new SlimefunItemStack(SlimefunItems.ALUMINUM_INGOT, 4), new SlimefunItemStack(SlimefunItems.ALUMINUM_DUST, 8))
-                .addRecipe(new SlimefunItemStack(SlimefunItems.LEAD_INGOT, 4), new SlimefunItemStack(SlimefunItems.LEAD_DUST, 8))
-                .addRecipe(new SlimefunItemStack(SlimefunItems.SILVER_INGOT, 4), new SlimefunItemStack(SlimefunItems.SILVER_DUST, 8))
-                .addRecipe(new SlimefunItemStack(SlimefunItems.GOLD_24K, 1), new SlimefunItemStack(SlimefunItems.GOLD_DUST, 8))
-                .addRecipe(new ItemStack(Material.IRON_INGOT, 4), new SlimefunItemStack(SlimefunItems.IRON_DUST, 8))
-                .addRecipe(new SlimefunItemStack(SlimefunItems.MAGNESIUM_INGOT, 4), new SlimefunItemStack(SlimefunItems.MAGNESIUM_DUST, 8))
-                .ticksPerOutput(1).energyPerTick(240).register(plugin);
+        }).addRecipe(new SlimefunItemStack(SlimefunItems.COPPER_INGOT, 8), new SlimefunItemStack(SlimefunItems.COPPER_DUST, 16))
+                .addRecipe(new SlimefunItemStack(SlimefunItems.ZINC_INGOT, 8), new SlimefunItemStack(SlimefunItems.ZINC_DUST, 16))
+                .addRecipe(new SlimefunItemStack(SlimefunItems.TIN_INGOT, 8), new SlimefunItemStack(SlimefunItems.TIN_DUST, 16))
+                .addRecipe(new SlimefunItemStack(SlimefunItems.ALUMINUM_INGOT, 8), new SlimefunItemStack(SlimefunItems.ALUMINUM_DUST, 16))
+                .addRecipe(new SlimefunItemStack(SlimefunItems.LEAD_INGOT, 8), new SlimefunItemStack(SlimefunItems.LEAD_DUST, 16))
+                .addRecipe(new SlimefunItemStack(SlimefunItems.SILVER_INGOT, 8), new SlimefunItemStack(SlimefunItems.SILVER_DUST, 16))
+                .addRecipe(new SlimefunItemStack(SlimefunItems.GOLD_24K, 2), new SlimefunItemStack(SlimefunItems.GOLD_DUST, 16))
+                .addRecipe(new ItemStack(Material.IRON_INGOT, 8), new SlimefunItemStack(SlimefunItems.IRON_DUST, 16))
+                .addRecipe(new SlimefunItemStack(SlimefunItems.MAGNESIUM_INGOT, 8), new SlimefunItemStack(SlimefunItems.MAGNESIUM_DUST, 16))
+                .ticksPerOutput(1).energyPerTick(440).register(plugin);
 
         new MachineBlock(Groups.INFINITY_CHEAT, INFINITY_INGOT_FORMER, InfinityWorkbench.TYPE, new ItemStack[] {
                 Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
