@@ -156,7 +156,7 @@ public final class Machines {
             "&7Forms ingots from dusts",
             "",
             MachineLore.speed(16),
-            MachineLore.energyPerSecond(7200)
+            MachineLore.energyPerSecond(10200)
     );
     public static final SlimefunItemStack URANIUM_EXTRACTOR = new SlimefunItemStack(
             "URANIUM_EXTRACTOR",
