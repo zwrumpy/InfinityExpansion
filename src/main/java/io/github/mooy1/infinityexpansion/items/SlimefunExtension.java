@@ -159,7 +159,7 @@ public final class SlimefunExtension {
     );
     public static final SlimefunItemStack VOID_CAPACITOR = new SlimefunItemStack(
             "VOID_CAPACITOR",
-            HeadTexture.CAPACITOR_25,
+            Material.GRAY_GLAZED_TERRACOTTA,
             "&8Void Capacitor",
             "",
             "&8\u21E8 &e\u26A1 " + MachineLore.format(VOID_CAPACITY) + " &7J Capacity"
