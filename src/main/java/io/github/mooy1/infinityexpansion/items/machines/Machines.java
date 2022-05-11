@@ -129,7 +129,7 @@ public final class Machines {
             "&7Converts cobble into dusts",
             "",
             MachineLore.speed(1),
-            MachineLore.energyPerSecond(240)
+            MachineLore.energyPerSecond(1040)
     );
     public static final SlimefunItemStack INFINITY_DUST_EXTRACTOR = new SlimefunItemStack(
             "INFINITY_DUST_EXTRACTOR",
