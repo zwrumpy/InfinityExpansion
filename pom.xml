@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.mooy1</groupId>
     <artifactId>InfinityExpansion</artifactId>
-    <version>CH 0.1 #139</version>
+    <version>Luneta 0.2 #139</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
