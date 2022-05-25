@@ -29,6 +29,8 @@ import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 
+import javax.annotation.Nonnull;
+
 import static io.github.mooy1.infinityexpansion.items.storage.StorageUnit.DISPLAY_KEY;
 import static io.github.mooy1.infinityexpansion.items.storage.StorageUnit.DISPLAY_SLOT;
 import static io.github.mooy1.infinityexpansion.items.storage.StorageUnit.EMPTY_KEY;
@@ -421,11 +423,14 @@ public final class StorageCache {
     }
 
     private ItemStack createItem(int amount) {
-        ItemStack item = new ItemStack(this.material, amount);
-        if (this.meta != null) {
-            item.setItemMeta(this.meta);
+        if (this.material != null) {
+            ItemStack item = new ItemStack(this.material, amount);
+            if (this.meta != null) {
+                item.setItemMeta(this.meta);
+            }
+            return item;
         }
-        return item;
+        return new ItemStack(Material.AIR);
     }
 
     boolean isEmpty() {
